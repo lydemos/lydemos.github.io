@@ -1,0 +1,97 @@
+body,
+html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(48, 38, 24);
+}
+
+.header{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(170, 174, 105);
+}
+
+.main{
+  width: 80%;
+  height: 400px;
+  background: rgb(170, 174, 105);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main>.title{
+  background: rgb(162, 216, 183);
+  line-height: 30px;
+  height: 30px;
+  color: red;
+  text-align: center;
+}
+.main>.show{
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  background: red;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main>.show::after{
+  display: block;
+  content: "选房抽签顺序";
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  font-size: 16px;
+  color: #000;
+}
+.main>.buttons{
+  width: 80%;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+.main>.buttons:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.main>.buttons>li{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: linear-gradient(#fff, yellow);
+  color: #000;
+}
+.main>.buttons>li:nth-of-type(1){
+  float: left;
+}
+.main>.buttons>li:nth-of-type(2){
+  float: right;
+}
